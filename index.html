@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <div style="word-wrap: break-word">
+        <p id="demo"></p>
+    </div>
+
+    <script>
+        let sec = 0;
+        //let time = localStorage.getItem('secs')
+        //console.log(time)
+        setInterval(function() {
+            ++sec
+            localStorage.setItem('secs', sec)
+            console.log(sec % 60);
+        }, 1000);
+
+    </script>
+
+</body>
+
+</html>
+
+<!-- 
+    
+//      var sec = 0;
+
+tmpSec = localStorage.getItem('secs')
+//      if (tmpSec != null) {
+//         sec = parseInt(tmpSec,0);
+//      }
+
+
+//      function pad(val) { return val > 9 ? val : "0" + val; }
+
+setInterval(function () {
+    ++sec
+    localStorage.setItem('secs', sec)
+    console.log(pad(sec % 60));
+}, 1000);
+
+-->
